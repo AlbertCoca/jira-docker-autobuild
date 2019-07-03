@@ -1,0 +1,3 @@
+[submodule "docker-autobuild"]
+	path = docker-autobuild
+	url = git@github.com:AlbertCoca/docker-autobuild.git
