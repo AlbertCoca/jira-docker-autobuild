@@ -15,4 +15,4 @@ def hello_world():
     return flask.send_from_directory('.', 'index.html')
 
 
-app.run(host="0.0.0.0", port=4000)
+app.run(host="0.0.0.0")
