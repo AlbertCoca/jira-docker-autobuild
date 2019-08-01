@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 
 # ==== IMPORTS SECTION ========================================================
-from flask import Flask
+import flask
 
 # ==== CONSTANTS DEFINITIONS ==================================================
 
 # ==== CLASS DEFINITION =======================================================
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return flask.send_from_directory('.', 'index.html')
 
 
 app.run(host="0.0.0.0")
